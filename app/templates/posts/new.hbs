@@ -1,0 +1,16 @@
+<h1>New Post</h1>
+
+<form>
+  <label>Title
+    {{input value=title}}
+  </label>
+
+  <label>Description
+    {{textarea value=description cols="80" rows="6"}}
+  </label>
+
+  <div>
+    <button type="submit" {{action save this}}>Save</button>
+    <button type="submit" {{action cancel this}} class="button secondary">Cancel</button>
+  </div>
+</form>
