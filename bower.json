@@ -12,6 +12,7 @@
     "loader": "stefanpenner/loader.js#1.0.0",
     "ember-cli-shims": "stefanpenner/ember-cli-shims#0.0.1",
     "ember-load-initializers": "stefanpenner/ember-load-initializers#0.0.1",
-    "emberfire": "~1.0.9"
+    "emberfire": "~1.0.9",
+    "foundation": "~5.2.2"
   }
 }
