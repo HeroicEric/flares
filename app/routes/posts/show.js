@@ -14,9 +14,8 @@ export default Ember.Route.extend({
     saveReply: function(post, reply) {
       var _this = this;
 
-      post.get('replies').addObject(reply);
-      post.save().then(function() {
-        reply.save();
+      reply.save().then(function() {
+        post.get('replies').addObject(reply);
 
         var newReply = _this.store.createRecord('reply');
         _this.controller.set('reply', newReply);
