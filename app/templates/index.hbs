@@ -3,6 +3,6 @@
 <h1>Posts</h1>
 
 {{#each}}
-  <h3>{{title}}</h3>
+  <h3>{{link-to title 'posts.show' this}}</h3>
   <p>{{description}}</p>
 {{/each}}

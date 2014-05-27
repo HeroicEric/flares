@@ -7,8 +7,8 @@ export default Ember.Route.extend({
     save: function(model) {
       var _this = this;
 
-      model.save().then(function() {
-        _this.transitionTo('index');
+      model.save().then(function(model) {
+        _this.transitionTo('posts.show', model);
       }, function(response) {
         _this.set('errors', response.errors);
       });

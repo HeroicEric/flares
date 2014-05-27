@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="small-6 columns">
+    <h1>{{title}}</h1>
+    <p>{{description}}</p>
+  </div>
+
+  <div class="small-6 columns">
+    <div class="panel">
+      <h3>Replies</h3>
+
+      {{#each replies}}
+        <p>{{body}}</p>
+      {{/each}}
+
+      <form>
+        <label>Reply
+          {{textarea action='saveRep' allowedKeys="h" value=reply.body cols="80" rows="3"}}
+        </label>
+
+        <div>
+          <button type="submit" {{action saveReply this reply}}>Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
