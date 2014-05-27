@@ -4,5 +4,5 @@
 
 {{#each}}
   <h3>{{link-to title 'posts.show' this}}</h3>
-  <p>{{description}}</p>
+  <p>{{render-markdown description}}</p>
 {{/each}}

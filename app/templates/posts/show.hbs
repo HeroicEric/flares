@@ -1,7 +1,7 @@
 <div class="row">
   <div class="small-6 columns">
     <h1>{{title}}</h1>
-    <p>{{description}}</p>
+    <p>{{render-markdown description}}</p>
   </div>
 
   <div class="small-6 columns">
@@ -9,7 +9,7 @@
       <h3>Replies</h3>
 
       {{#each replies}}
-        <p>{{body}}</p>
+        <p>{{render-markdown body}}</p>
       {{/each}}
 
       <form>
